@@ -1,0 +1,1101 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2411D57C1A9B794E0014F5A2 /* MangaListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2411D57B1A9B794E0014F5A2 /* MangaListingViewController.m */; };
+		2411D5811A9B7A030014F5A2 /* FakkuAPIPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2411D5801A9B7A030014F5A2 /* FakkuAPIPage.m */; };
+		2411D5851A9B7A940014F5A2 /* FakkuAPIAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2411D5841A9B7A940014F5A2 /* FakkuAPIAdapter.m */; };
+		2411D58C1A9B7C680014F5A2 /* FakkuAPIMangaListingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2411D58B1A9B7C680014F5A2 /* FakkuAPIMangaListingPage.m */; };
+		2411D5911A9B80FE0014F5A2 /* DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2411D5901A9B80FE0014F5A2 /* DataHelper.m */; };
+		2411D59C1A9B848C0014F5A2 /* MangaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2411D59B1A9B848C0014F5A2 /* MangaModel.m */; };
+		2411D59F1A9B84B90014F5A2 /* MangaCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2411D59E1A9B84B90014F5A2 /* MangaCategory.m */; };
+		2411D5A31A9B84DE0014F5A2 /* MangaLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2411D5A21A9B84DE0014F5A2 /* MangaLanguage.m */; };
+		241474D91AA7632E00998A41 /* MangaBrowseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241474D81AA7632E00998A41 /* MangaBrowseTableViewController.m */; };
+		2447185F1AA8D7D800BD90BF /* MangaSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2447185E1AA8D7D800BD90BF /* MangaSettingsWebViewController.m */; };
+		244FA2801A9C50A1007952B2 /* MangaSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA27F1A9C50A1007952B2 /* MangaSeries.m */; };
+		244FA2841A9C50F0007952B2 /* MangaArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA2831A9C50F0007952B2 /* MangaArtist.m */; };
+		244FA2881A9C5136007952B2 /* MangaPreviewThumbnails.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA2871A9C5136007952B2 /* MangaPreviewThumbnails.m */; };
+		244FA28C1A9C5181007952B2 /* MangaPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA28B1A9C5181007952B2 /* MangaPoster.m */; };
+		244FA2901A9C51BB007952B2 /* MangaTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA28F1A9C51BB007952B2 /* MangaTag.m */; };
+		244FA2931A9C51E0007952B2 /* MangaTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA2921A9C51E0007952B2 /* MangaTranslator.m */; };
+		244FA2971A9C520D007952B2 /* MangaPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA2961A9C520D007952B2 /* MangaPage.m */; };
+		244FA29F1A9C5865007952B2 /* MangaListingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA29D1A9C5865007952B2 /* MangaListingTableViewController.m */; };
+		244FA2A51A9C5A5B007952B2 /* MangaListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 244FA2A31A9C5A5B007952B2 /* MangaListingTableViewCell.m */; };
+		244FA2A61A9C5A5B007952B2 /* MangaListingTableViewCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244FA2A41A9C5A5B007952B2 /* MangaListingTableViewCell_iPad.xib */; };
+		2459C8DF1AA0907200C587D6 /* MangaDownloadedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2459C8DE1AA0907200C587D6 /* MangaDownloadedTableViewCell.m */; };
+		2472A78C1AAB191C00EC0B60 /* MangaTagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2472A78B1AAB191C00EC0B60 /* MangaTagsTableViewController.m */; };
+		2486AB181AB8A1700030C0BB /* MangaInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2486AB171AB8A1700030C0BB /* MangaInfoTableViewController.m */; };
+		2486AB1C1AB8A8D20030C0BB /* MangaInfoDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2486AB1B1AB8A8D20030C0BB /* MangaInfoDescriptionTableViewCell.m */; };
+		248AFAB61AAB5973000DECD2 /* NSUserDefaultsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 248AFAB51AAB5973000DECD2 /* NSUserDefaultsHelper.m */; };
+		248AFABA1AAB5B3B000DECD2 /* MangaSettingsPageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248AFAB91AAB5B3B000DECD2 /* MangaSettingsPageTableViewController.m */; };
+		249460221AA2258400EE826B /* MangaListingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249460211AA2258400EE826B /* MangaListingTableViewController.xib */; };
+		2498EBF71AA8D0FE006EA41F /* MangaSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2498EBF61AA8D0FE006EA41F /* MangaSettingsTableViewController.m */; };
+		24B1FACA1A9B6F2A00DF4EB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1FAC91A9B6F2A00DF4EB9 /* main.m */; };
+		24B1FACD1A9B6F2A00DF4EB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1FACC1A9B6F2A00DF4EB9 /* AppDelegate.m */; };
+		24B1FAD31A9B6F2A00DF4EB9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B1FAD11A9B6F2A00DF4EB9 /* Main_iPad.storyboard */; };
+		24B1FAD51A9B6F2A00DF4EB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B1FAD41A9B6F2A00DF4EB9 /* Images.xcassets */; };
+		24B1FAE41A9B6F2A00DF4EB9 /* iFakkuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1FAE31A9B6F2A00DF4EB9 /* iFakkuTests.m */; };
+		24B37E9B1AA1995E00883515 /* MangaListingTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B37E9A1AA1995E00883515 /* MangaListingTableViewCell_iPhone.xib */; };
+		24B4DE971AA96C29002FCF58 /* iFakkuFAQ.html in Resources */ = {isa = PBXBuildFile; fileRef = 24B4DE951AA96C29002FCF58 /* iFakkuFAQ.html */; };
+		24B4DE981AA96C29002FCF58 /* iFakkuSpecialThanks.html in Resources */ = {isa = PBXBuildFile; fileRef = 24B4DE961AA96C29002FCF58 /* iFakkuSpecialThanks.html */; };
+		24B5A7601AA0086C004FBB8C /* MangaReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A75F1AA0086C004FBB8C /* MangaReadViewController.m */; };
+		24B5A76B1AA040DE004FBB8C /* MangaReadGridModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A76A1AA040DE004FBB8C /* MangaReadGridModalViewController.m */; };
+		24B5A76E1AA04269004FBB8C /* MangaReadGridModalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A76D1AA04269004FBB8C /* MangaReadGridModalCollectionViewCell.m */; };
+		24C213AC1A9DB043005E6D1A /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C213AB1A9DB043005E6D1A /* NetworkHelper.m */; };
+		24C213B01A9DB790005E6D1A /* MangaDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C213AF1A9DB790005E6D1A /* MangaDisplayViewController.m */; };
+		24C213B41A9E0BD3005E6D1A /* MangaDownloadsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C213B31A9E0BD3005E6D1A /* MangaDownloadsTableViewController.m */; };
+		24C213B81A9E0CFA005E6D1A /* MangaDownloadsQueueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C213B71A9E0CFA005E6D1A /* MangaDownloadsQueueTableViewController.m */; };
+		24C213BC1A9E142C005E6D1A /* DownloaderAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C213BB1A9E142C005E6D1A /* DownloaderAdapter.m */; };
+		24C213C01A9E145C005E6D1A /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C213BF1A9E145C005E6D1A /* Downloader.m */; };
+		24C213C41A9E1599005E6D1A /* DownloadMangaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C213C31A9E1599005E6D1A /* DownloadMangaModel.m */; };
+		24C213C81A9E17B3005E6D1A /* FakkuAPIMangaReadPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C213C71A9E17B3005E6D1A /* FakkuAPIMangaReadPage.m */; };
+		24C3C7211A9EF0B2006ECA44 /* MangaDownloadQueueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3C7201A9EF0B2006ECA44 /* MangaDownloadQueueTableViewCell.m */; };
+		24C3C7251A9F0903006ECA44 /* FileSystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3C7241A9F0903006ECA44 /* FileSystemHelper.m */; };
+		24F04CA41A9CD083006EAD9D /* LoadMoreFooterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F04CA21A9CD083006EAD9D /* LoadMoreFooterTableViewCell.m */; };
+		24F04CA51A9CD083006EAD9D /* LoadMoreFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F04CA31A9CD083006EAD9D /* LoadMoreFooterTableViewCell.xib */; };
+		24FD47521AA9B5FF00105930 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FD47541AA9B5FF00105930 /* Main_iPhone.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24B1FADE1A9B6F2A00DF4EB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24B1FABC1A9B6F2A00DF4EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24B1FAC31A9B6F2A00DF4EB9;
+			remoteInfo = iFakku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2411D57A1A9B794E0014F5A2 /* MangaListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaListingViewController.h; sourceTree = "<group>"; };
+		2411D57B1A9B794E0014F5A2 /* MangaListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaListingViewController.m; sourceTree = "<group>"; };
+		2411D57F1A9B7A030014F5A2 /* FakkuAPIPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakkuAPIPage.h; sourceTree = "<group>"; };
+		2411D5801A9B7A030014F5A2 /* FakkuAPIPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakkuAPIPage.m; sourceTree = "<group>"; };
+		2411D5831A9B7A940014F5A2 /* FakkuAPIAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakkuAPIAdapter.h; sourceTree = "<group>"; };
+		2411D5841A9B7A940014F5A2 /* FakkuAPIAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakkuAPIAdapter.m; sourceTree = "<group>"; };
+		2411D58A1A9B7C680014F5A2 /* FakkuAPIMangaListingPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakkuAPIMangaListingPage.h; sourceTree = "<group>"; };
+		2411D58B1A9B7C680014F5A2 /* FakkuAPIMangaListingPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakkuAPIMangaListingPage.m; sourceTree = "<group>"; };
+		2411D58F1A9B80FE0014F5A2 /* DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHelper.h; sourceTree = "<group>"; };
+		2411D5901A9B80FE0014F5A2 /* DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHelper.m; sourceTree = "<group>"; };
+		2411D59A1A9B848C0014F5A2 /* MangaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaModel.h; sourceTree = "<group>"; };
+		2411D59B1A9B848C0014F5A2 /* MangaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaModel.m; sourceTree = "<group>"; };
+		2411D59D1A9B84B90014F5A2 /* MangaCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaCategory.h; sourceTree = "<group>"; };
+		2411D59E1A9B84B90014F5A2 /* MangaCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaCategory.m; sourceTree = "<group>"; };
+		2411D5A11A9B84DE0014F5A2 /* MangaLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaLanguage.h; sourceTree = "<group>"; };
+		2411D5A21A9B84DE0014F5A2 /* MangaLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaLanguage.m; sourceTree = "<group>"; };
+		241474D71AA7632E00998A41 /* MangaBrowseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaBrowseTableViewController.h; sourceTree = "<group>"; };
+		241474D81AA7632E00998A41 /* MangaBrowseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaBrowseTableViewController.m; sourceTree = "<group>"; };
+		2447185D1AA8D7D800BD90BF /* MangaSettingsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaSettingsWebViewController.h; sourceTree = "<group>"; };
+		2447185E1AA8D7D800BD90BF /* MangaSettingsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaSettingsWebViewController.m; sourceTree = "<group>"; };
+		244FA27E1A9C50A1007952B2 /* MangaSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaSeries.h; sourceTree = "<group>"; };
+		244FA27F1A9C50A1007952B2 /* MangaSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaSeries.m; sourceTree = "<group>"; };
+		244FA2821A9C50F0007952B2 /* MangaArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaArtist.h; sourceTree = "<group>"; };
+		244FA2831A9C50F0007952B2 /* MangaArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaArtist.m; sourceTree = "<group>"; };
+		244FA2861A9C5136007952B2 /* MangaPreviewThumbnails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaPreviewThumbnails.h; sourceTree = "<group>"; };
+		244FA2871A9C5136007952B2 /* MangaPreviewThumbnails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaPreviewThumbnails.m; sourceTree = "<group>"; };
+		244FA28A1A9C5181007952B2 /* MangaPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaPoster.h; sourceTree = "<group>"; };
+		244FA28B1A9C5181007952B2 /* MangaPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaPoster.m; sourceTree = "<group>"; };
+		244FA28E1A9C51BB007952B2 /* MangaTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaTag.h; sourceTree = "<group>"; };
+		244FA28F1A9C51BB007952B2 /* MangaTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaTag.m; sourceTree = "<group>"; };
+		244FA2911A9C51E0007952B2 /* MangaTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaTranslator.h; sourceTree = "<group>"; };
+		244FA2921A9C51E0007952B2 /* MangaTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaTranslator.m; sourceTree = "<group>"; };
+		244FA2951A9C520D007952B2 /* MangaPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaPage.h; sourceTree = "<group>"; };
+		244FA2961A9C520D007952B2 /* MangaPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaPage.m; sourceTree = "<group>"; };
+		244FA29C1A9C5865007952B2 /* MangaListingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaListingTableViewController.h; sourceTree = "<group>"; };
+		244FA29D1A9C5865007952B2 /* MangaListingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaListingTableViewController.m; sourceTree = "<group>"; };
+		244FA2A21A9C5A5B007952B2 /* MangaListingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaListingTableViewCell.h; sourceTree = "<group>"; };
+		244FA2A31A9C5A5B007952B2 /* MangaListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaListingTableViewCell.m; sourceTree = "<group>"; };
+		244FA2A41A9C5A5B007952B2 /* MangaListingTableViewCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MangaListingTableViewCell_iPad.xib; sourceTree = "<group>"; };
+		2459C8DD1AA0907200C587D6 /* MangaDownloadedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaDownloadedTableViewCell.h; sourceTree = "<group>"; };
+		2459C8DE1AA0907200C587D6 /* MangaDownloadedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaDownloadedTableViewCell.m; sourceTree = "<group>"; };
+		2472A78A1AAB191C00EC0B60 /* MangaTagsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaTagsTableViewController.h; sourceTree = "<group>"; };
+		2472A78B1AAB191C00EC0B60 /* MangaTagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaTagsTableViewController.m; sourceTree = "<group>"; };
+		2486AB161AB8A1700030C0BB /* MangaInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaInfoTableViewController.h; sourceTree = "<group>"; };
+		2486AB171AB8A1700030C0BB /* MangaInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaInfoTableViewController.m; sourceTree = "<group>"; };
+		2486AB1A1AB8A8D20030C0BB /* MangaInfoDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaInfoDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		2486AB1B1AB8A8D20030C0BB /* MangaInfoDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaInfoDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		248AFAB41AAB5973000DECD2 /* NSUserDefaultsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsHelper.h; sourceTree = "<group>"; };
+		248AFAB51AAB5973000DECD2 /* NSUserDefaultsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsHelper.m; sourceTree = "<group>"; };
+		248AFAB81AAB5B3B000DECD2 /* MangaSettingsPageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaSettingsPageTableViewController.h; sourceTree = "<group>"; };
+		248AFAB91AAB5B3B000DECD2 /* MangaSettingsPageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaSettingsPageTableViewController.m; sourceTree = "<group>"; };
+		249460211AA2258400EE826B /* MangaListingTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MangaListingTableViewController.xib; sourceTree = "<group>"; };
+		2498EBF51AA8D0FE006EA41F /* MangaSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaSettingsTableViewController.h; sourceTree = "<group>"; };
+		2498EBF61AA8D0FE006EA41F /* MangaSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaSettingsTableViewController.m; sourceTree = "<group>"; };
+		24B1FAC41A9B6F2A00DF4EB9 /* iFakku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFakku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B1FAC81A9B6F2A00DF4EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B1FAC91A9B6F2A00DF4EB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24B1FACB1A9B6F2A00DF4EB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24B1FACC1A9B6F2A00DF4EB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24B1FAD21A9B6F2A00DF4EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		24B1FAD41A9B6F2A00DF4EB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		24B1FADD1A9B6F2A00DF4EB9 /* iFakkuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFakkuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B1FAE21A9B6F2A00DF4EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B1FAE31A9B6F2A00DF4EB9 /* iFakkuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFakkuTests.m; sourceTree = "<group>"; };
+		24B37E9A1AA1995E00883515 /* MangaListingTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MangaListingTableViewCell_iPhone.xib; sourceTree = "<group>"; };
+		24B4DE951AA96C29002FCF58 /* iFakkuFAQ.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iFakkuFAQ.html; sourceTree = "<group>"; };
+		24B4DE961AA96C29002FCF58 /* iFakkuSpecialThanks.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iFakkuSpecialThanks.html; sourceTree = "<group>"; };
+		24B5A75E1AA0086C004FBB8C /* MangaReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaReadViewController.h; sourceTree = "<group>"; };
+		24B5A75F1AA0086C004FBB8C /* MangaReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaReadViewController.m; sourceTree = "<group>"; };
+		24B5A7691AA040DE004FBB8C /* MangaReadGridModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaReadGridModalViewController.h; sourceTree = "<group>"; };
+		24B5A76A1AA040DE004FBB8C /* MangaReadGridModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaReadGridModalViewController.m; sourceTree = "<group>"; };
+		24B5A76C1AA04269004FBB8C /* MangaReadGridModalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaReadGridModalCollectionViewCell.h; sourceTree = "<group>"; };
+		24B5A76D1AA04269004FBB8C /* MangaReadGridModalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaReadGridModalCollectionViewCell.m; sourceTree = "<group>"; };
+		24C213AA1A9DB043005E6D1A /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
+		24C213AB1A9DB043005E6D1A /* NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
+		24C213AE1A9DB790005E6D1A /* MangaDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaDisplayViewController.h; sourceTree = "<group>"; };
+		24C213AF1A9DB790005E6D1A /* MangaDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaDisplayViewController.m; sourceTree = "<group>"; };
+		24C213B21A9E0BD3005E6D1A /* MangaDownloadsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaDownloadsTableViewController.h; sourceTree = "<group>"; };
+		24C213B31A9E0BD3005E6D1A /* MangaDownloadsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaDownloadsTableViewController.m; sourceTree = "<group>"; };
+		24C213B61A9E0CFA005E6D1A /* MangaDownloadsQueueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaDownloadsQueueTableViewController.h; sourceTree = "<group>"; };
+		24C213B71A9E0CFA005E6D1A /* MangaDownloadsQueueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaDownloadsQueueTableViewController.m; sourceTree = "<group>"; };
+		24C213BA1A9E142C005E6D1A /* DownloaderAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloaderAdapter.h; sourceTree = "<group>"; };
+		24C213BB1A9E142C005E6D1A /* DownloaderAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderAdapter.m; sourceTree = "<group>"; };
+		24C213BE1A9E145C005E6D1A /* Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Downloader.h; sourceTree = "<group>"; };
+		24C213BF1A9E145C005E6D1A /* Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Downloader.m; sourceTree = "<group>"; };
+		24C213C21A9E1599005E6D1A /* DownloadMangaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadMangaModel.h; sourceTree = "<group>"; };
+		24C213C31A9E1599005E6D1A /* DownloadMangaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadMangaModel.m; sourceTree = "<group>"; };
+		24C213C61A9E17B3005E6D1A /* FakkuAPIMangaReadPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakkuAPIMangaReadPage.h; sourceTree = "<group>"; };
+		24C213C71A9E17B3005E6D1A /* FakkuAPIMangaReadPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakkuAPIMangaReadPage.m; sourceTree = "<group>"; };
+		24C3C71F1A9EF0B2006ECA44 /* MangaDownloadQueueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaDownloadQueueTableViewCell.h; sourceTree = "<group>"; };
+		24C3C7201A9EF0B2006ECA44 /* MangaDownloadQueueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaDownloadQueueTableViewCell.m; sourceTree = "<group>"; };
+		24C3C7231A9F0903006ECA44 /* FileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemHelper.h; sourceTree = "<group>"; };
+		24C3C7241A9F0903006ECA44 /* FileSystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemHelper.m; sourceTree = "<group>"; };
+		24F04CA11A9CD083006EAD9D /* LoadMoreFooterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreFooterTableViewCell.h; sourceTree = "<group>"; };
+		24F04CA21A9CD083006EAD9D /* LoadMoreFooterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreFooterTableViewCell.m; sourceTree = "<group>"; };
+		24F04CA31A9CD083006EAD9D /* LoadMoreFooterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadMoreFooterTableViewCell.xib; sourceTree = "<group>"; };
+		24FD47531AA9B5FF00105930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24B1FAC11A9B6F2A00DF4EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24B1FADA1A9B6F2A00DF4EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2411D5781A9B790B0014F5A2 /* MangaListingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2411D57A1A9B794E0014F5A2 /* MangaListingViewController.h */,
+				2411D57B1A9B794E0014F5A2 /* MangaListingViewController.m */,
+			);
+			name = MangaListingViewController;
+			sourceTree = "<group>";
+		};
+		2411D57D1A9B79D00014F5A2 /* FakkuAPIPages */ = {
+			isa = PBXGroup;
+			children = (
+				2411D5821A9B7A820014F5A2 /* FakkuAPIAdapter */,
+				2411D57E1A9B79EF0014F5A2 /* FakkuAPIPage */,
+				2411D5891A9B7C4B0014F5A2 /* FakkuAPIMangaListingPage */,
+				24C213C91A9E17B7005E6D1A /* FakkuAPIMangaReadPage */,
+			);
+			name = FakkuAPIPages;
+			sourceTree = "<group>";
+		};
+		2411D57E1A9B79EF0014F5A2 /* FakkuAPIPage */ = {
+			isa = PBXGroup;
+			children = (
+				2411D57F1A9B7A030014F5A2 /* FakkuAPIPage.h */,
+				2411D5801A9B7A030014F5A2 /* FakkuAPIPage.m */,
+			);
+			name = FakkuAPIPage;
+			sourceTree = "<group>";
+		};
+		2411D5821A9B7A820014F5A2 /* FakkuAPIAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				2411D5831A9B7A940014F5A2 /* FakkuAPIAdapter.h */,
+				2411D5841A9B7A940014F5A2 /* FakkuAPIAdapter.m */,
+			);
+			name = FakkuAPIAdapter;
+			sourceTree = "<group>";
+		};
+		2411D5891A9B7C4B0014F5A2 /* FakkuAPIMangaListingPage */ = {
+			isa = PBXGroup;
+			children = (
+				2411D58A1A9B7C680014F5A2 /* FakkuAPIMangaListingPage.h */,
+				2411D58B1A9B7C680014F5A2 /* FakkuAPIMangaListingPage.m */,
+			);
+			name = FakkuAPIMangaListingPage;
+			sourceTree = "<group>";
+		};
+		2411D58D1A9B80DC0014F5A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				248AFAB31AAB5951000DECD2 /* NSUserDefaultsHelper */,
+				2411D58E1A9B80EA0014F5A2 /* DataHelper */,
+				24C213AD1A9DB046005E6D1A /* NetworkHelper */,
+				24C3C7261A9F0907006ECA44 /* FileSystemHelper */,
+				24C213BD1A9E1431005E6D1A /* DownloaderAdapter */,
+				24C213C11A9E1477005E6D1A /* Downloader */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		2411D58E1A9B80EA0014F5A2 /* DataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2411D58F1A9B80FE0014F5A2 /* DataHelper.h */,
+				2411D5901A9B80FE0014F5A2 /* DataHelper.m */,
+			);
+			name = DataHelper;
+			sourceTree = "<group>";
+		};
+		2411D5921A9B83A00014F5A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2411D5981A9B847A0014F5A2 /* MangaModel */,
+				24C213C51A9E159D005E6D1A /* DownloadMangaModel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2411D5981A9B847A0014F5A2 /* MangaModel */ = {
+			isa = PBXGroup;
+			children = (
+				2411D5991A9B847F0014F5A2 /* MangaModel (Main) */,
+				2411D5A01A9B84BD0014F5A2 /* MangaCategory */,
+				2411D5A41A9B84E10014F5A2 /* MangaLanguage */,
+				244FA2811A9C50C8007952B2 /* MangaArtist */,
+				244FA2851A9C5124007952B2 /* MangaPreviewThumbnails */,
+				244FA27D1A9C5085007952B2 /* MangaSeries */,
+				244FA2891A9C5169007952B2 /* MangaPoster */,
+				244FA28D1A9C51A4007952B2 /* MangaTag */,
+				244FA2941A9C51E3007952B2 /* MangaTranslator */,
+				244FA2981A9C520F007952B2 /* MangaPage */,
+			);
+			name = MangaModel;
+			sourceTree = "<group>";
+		};
+		2411D5991A9B847F0014F5A2 /* MangaModel (Main) */ = {
+			isa = PBXGroup;
+			children = (
+				2411D59A1A9B848C0014F5A2 /* MangaModel.h */,
+				2411D59B1A9B848C0014F5A2 /* MangaModel.m */,
+			);
+			name = "MangaModel (Main)";
+			sourceTree = "<group>";
+		};
+		2411D5A01A9B84BD0014F5A2 /* MangaCategory */ = {
+			isa = PBXGroup;
+			children = (
+				2411D59D1A9B84B90014F5A2 /* MangaCategory.h */,
+				2411D59E1A9B84B90014F5A2 /* MangaCategory.m */,
+			);
+			name = MangaCategory;
+			sourceTree = "<group>";
+		};
+		2411D5A41A9B84E10014F5A2 /* MangaLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				2411D5A11A9B84DE0014F5A2 /* MangaLanguage.h */,
+				2411D5A21A9B84DE0014F5A2 /* MangaLanguage.m */,
+			);
+			name = MangaLanguage;
+			sourceTree = "<group>";
+		};
+		241474DA1AA7633200998A41 /* MangaBrowseTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				241474D71AA7632E00998A41 /* MangaBrowseTableViewController.h */,
+				241474D81AA7632E00998A41 /* MangaBrowseTableViewController.m */,
+			);
+			name = MangaBrowseTableViewController;
+			sourceTree = "<group>";
+		};
+		244718601AA8D7DB00BD90BF /* MangaSettingsWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2447185D1AA8D7D800BD90BF /* MangaSettingsWebViewController.h */,
+				2447185E1AA8D7D800BD90BF /* MangaSettingsWebViewController.m */,
+			);
+			name = MangaSettingsWebViewController;
+			sourceTree = "<group>";
+		};
+		2449FBD01A9B74BB00E5C041 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				244FA2991A9C5793007952B2 /* <MangaListing> UI */,
+				2411D5781A9B790B0014F5A2 /* MangaListingViewController */,
+				241474DA1AA7633200998A41 /* MangaBrowseTableViewController */,
+				2472A78D1AAB192000EC0B60 /* MangaTagsTableViewController */,
+				24C213B11A9DB7AC005E6D1A /* MangaDisplayViewController */,
+				2486AB191AB8A1750030C0BB /* MangaInfoTableViewController */,
+				24B5A7611AA00872004FBB8C /* MangaReadViewController */,
+				24C213B51A9E0BD5005E6D1A /* MangaDownloadsTableViewController */,
+				24C213B91A9E0D0E005E6D1A /* MangaDownloadsQueueTableViewController */,
+				2498EBF81AA8D100006EA41F /* MangaSettingsTableViewController */,
+				248AFAB71AAB5B23000DECD2 /* MangaSettingsPageTableViewController */,
+				244718601AA8D7DB00BD90BF /* MangaSettingsWebViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		244FA27D1A9C5085007952B2 /* MangaSeries */ = {
+			isa = PBXGroup;
+			children = (
+				244FA27E1A9C50A1007952B2 /* MangaSeries.h */,
+				244FA27F1A9C50A1007952B2 /* MangaSeries.m */,
+			);
+			name = MangaSeries;
+			sourceTree = "<group>";
+		};
+		244FA2811A9C50C8007952B2 /* MangaArtist */ = {
+			isa = PBXGroup;
+			children = (
+				244FA2821A9C50F0007952B2 /* MangaArtist.h */,
+				244FA2831A9C50F0007952B2 /* MangaArtist.m */,
+			);
+			name = MangaArtist;
+			sourceTree = "<group>";
+		};
+		244FA2851A9C5124007952B2 /* MangaPreviewThumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				244FA2861A9C5136007952B2 /* MangaPreviewThumbnails.h */,
+				244FA2871A9C5136007952B2 /* MangaPreviewThumbnails.m */,
+			);
+			name = MangaPreviewThumbnails;
+			sourceTree = "<group>";
+		};
+		244FA2891A9C5169007952B2 /* MangaPoster */ = {
+			isa = PBXGroup;
+			children = (
+				244FA28A1A9C5181007952B2 /* MangaPoster.h */,
+				244FA28B1A9C5181007952B2 /* MangaPoster.m */,
+			);
+			name = MangaPoster;
+			sourceTree = "<group>";
+		};
+		244FA28D1A9C51A4007952B2 /* MangaTag */ = {
+			isa = PBXGroup;
+			children = (
+				244FA28E1A9C51BB007952B2 /* MangaTag.h */,
+				244FA28F1A9C51BB007952B2 /* MangaTag.m */,
+			);
+			name = MangaTag;
+			sourceTree = "<group>";
+		};
+		244FA2941A9C51E3007952B2 /* MangaTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				244FA2911A9C51E0007952B2 /* MangaTranslator.h */,
+				244FA2921A9C51E0007952B2 /* MangaTranslator.m */,
+			);
+			name = MangaTranslator;
+			sourceTree = "<group>";
+		};
+		244FA2981A9C520F007952B2 /* MangaPage */ = {
+			isa = PBXGroup;
+			children = (
+				244FA2951A9C520D007952B2 /* MangaPage.h */,
+				244FA2961A9C520D007952B2 /* MangaPage.m */,
+			);
+			name = MangaPage;
+			sourceTree = "<group>";
+		};
+		244FA2991A9C5793007952B2 /* <MangaListing> UI */ = {
+			isa = PBXGroup;
+			children = (
+				244FA29A1A9C57BA007952B2 /* <MangaListing> TableView */,
+			);
+			name = "<MangaListing> UI";
+			sourceTree = "<group>";
+		};
+		244FA29A1A9C57BA007952B2 /* <MangaListing> TableView */ = {
+			isa = PBXGroup;
+			children = (
+				244FA29B1A9C57E9007952B2 /* MangaListingTableViewController */,
+				244FA2A11A9C5A43007952B2 /* MangaListingTableViewCell */,
+				24F04CA61A9CD086006EAD9D /* LoadMoreFooterTableViewCell */,
+			);
+			name = "<MangaListing> TableView";
+			sourceTree = "<group>";
+		};
+		244FA29B1A9C57E9007952B2 /* MangaListingTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				244FA29C1A9C5865007952B2 /* MangaListingTableViewController.h */,
+				244FA29D1A9C5865007952B2 /* MangaListingTableViewController.m */,
+				249460211AA2258400EE826B /* MangaListingTableViewController.xib */,
+			);
+			name = MangaListingTableViewController;
+			sourceTree = "<group>";
+		};
+		244FA2A11A9C5A43007952B2 /* MangaListingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				244FA2A21A9C5A5B007952B2 /* MangaListingTableViewCell.h */,
+				244FA2A31A9C5A5B007952B2 /* MangaListingTableViewCell.m */,
+				244FA2A41A9C5A5B007952B2 /* MangaListingTableViewCell_iPad.xib */,
+				24B37E9A1AA1995E00883515 /* MangaListingTableViewCell_iPhone.xib */,
+			);
+			name = MangaListingTableViewCell;
+			sourceTree = "<group>";
+		};
+		2459C8E01AA0907500C587D6 /* MangaDownloadedTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2459C8DD1AA0907200C587D6 /* MangaDownloadedTableViewCell.h */,
+				2459C8DE1AA0907200C587D6 /* MangaDownloadedTableViewCell.m */,
+			);
+			name = MangaDownloadedTableViewCell;
+			sourceTree = "<group>";
+		};
+		2472A78D1AAB192000EC0B60 /* MangaTagsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2472A78A1AAB191C00EC0B60 /* MangaTagsTableViewController.h */,
+				2472A78B1AAB191C00EC0B60 /* MangaTagsTableViewController.m */,
+			);
+			name = MangaTagsTableViewController;
+			sourceTree = "<group>";
+		};
+		2486AB191AB8A1750030C0BB /* MangaInfoTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2486AB161AB8A1700030C0BB /* MangaInfoTableViewController.h */,
+				2486AB171AB8A1700030C0BB /* MangaInfoTableViewController.m */,
+				2486AB1D1AB8A8D80030C0BB /* MangaInfoDescriptionTableViewCell */,
+			);
+			name = MangaInfoTableViewController;
+			sourceTree = "<group>";
+		};
+		2486AB1D1AB8A8D80030C0BB /* MangaInfoDescriptionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2486AB1A1AB8A8D20030C0BB /* MangaInfoDescriptionTableViewCell.h */,
+				2486AB1B1AB8A8D20030C0BB /* MangaInfoDescriptionTableViewCell.m */,
+			);
+			name = MangaInfoDescriptionTableViewCell;
+			sourceTree = "<group>";
+		};
+		248AFAB31AAB5951000DECD2 /* NSUserDefaultsHelper */ = {
+			isa = PBXGroup;
+			children = (
+				248AFAB41AAB5973000DECD2 /* NSUserDefaultsHelper.h */,
+				248AFAB51AAB5973000DECD2 /* NSUserDefaultsHelper.m */,
+			);
+			name = NSUserDefaultsHelper;
+			sourceTree = "<group>";
+		};
+		248AFAB71AAB5B23000DECD2 /* MangaSettingsPageTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				248AFAB81AAB5B3B000DECD2 /* MangaSettingsPageTableViewController.h */,
+				248AFAB91AAB5B3B000DECD2 /* MangaSettingsPageTableViewController.m */,
+			);
+			name = MangaSettingsPageTableViewController;
+			sourceTree = "<group>";
+		};
+		2498EBF81AA8D100006EA41F /* MangaSettingsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2498EBF51AA8D0FE006EA41F /* MangaSettingsTableViewController.h */,
+				2498EBF61AA8D0FE006EA41F /* MangaSettingsTableViewController.m */,
+			);
+			name = MangaSettingsTableViewController;
+			sourceTree = "<group>";
+		};
+		24B1FABB1A9B6F2A00DF4EB9 = {
+			isa = PBXGroup;
+			children = (
+				24B1FAC61A9B6F2A00DF4EB9 /* iFakku */,
+				24B1FAE01A9B6F2A00DF4EB9 /* iFakkuTests */,
+				24B1FAC51A9B6F2A00DF4EB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24B1FAC51A9B6F2A00DF4EB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24B1FAC41A9B6F2A00DF4EB9 /* iFakku.app */,
+				24B1FADD1A9B6F2A00DF4EB9 /* iFakkuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24B1FAC61A9B6F2A00DF4EB9 /* iFakku */ = {
+			isa = PBXGroup;
+			children = (
+				24B1FACB1A9B6F2A00DF4EB9 /* AppDelegate.h */,
+				24B1FACC1A9B6F2A00DF4EB9 /* AppDelegate.m */,
+				24B1FAD11A9B6F2A00DF4EB9 /* Main_iPad.storyboard */,
+				24FD47541AA9B5FF00105930 /* Main_iPhone.storyboard */,
+				24B1FAD41A9B6F2A00DF4EB9 /* Images.xcassets */,
+				24B4DE891AA969D8002FCF58 /* HTMLs */,
+				2411D5921A9B83A00014F5A2 /* Models */,
+				2411D57D1A9B79D00014F5A2 /* FakkuAPIPages */,
+				2411D58D1A9B80DC0014F5A2 /* Helpers */,
+				2449FBD01A9B74BB00E5C041 /* ViewControllers */,
+				24B1FAC71A9B6F2A00DF4EB9 /* Supporting Files */,
+			);
+			path = iFakku;
+			sourceTree = "<group>";
+		};
+		24B1FAC71A9B6F2A00DF4EB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24B1FAC81A9B6F2A00DF4EB9 /* Info.plist */,
+				24B1FAC91A9B6F2A00DF4EB9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24B1FAE01A9B6F2A00DF4EB9 /* iFakkuTests */ = {
+			isa = PBXGroup;
+			children = (
+				24B1FAE31A9B6F2A00DF4EB9 /* iFakkuTests.m */,
+				24B1FAE11A9B6F2A00DF4EB9 /* Supporting Files */,
+			);
+			path = iFakkuTests;
+			sourceTree = "<group>";
+		};
+		24B1FAE11A9B6F2A00DF4EB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24B1FAE21A9B6F2A00DF4EB9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24B4DE891AA969D8002FCF58 /* HTMLs */ = {
+			isa = PBXGroup;
+			children = (
+				24B4DE951AA96C29002FCF58 /* iFakkuFAQ.html */,
+				24B4DE961AA96C29002FCF58 /* iFakkuSpecialThanks.html */,
+			);
+			name = HTMLs;
+			sourceTree = "<group>";
+		};
+		24B5A7611AA00872004FBB8C /* MangaReadViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24B5A75E1AA0086C004FBB8C /* MangaReadViewController.h */,
+				24B5A75F1AA0086C004FBB8C /* MangaReadViewController.m */,
+				24B5A7651AA031D3004FBB8C /* MangaReadGridModalViewController */,
+			);
+			name = MangaReadViewController;
+			sourceTree = "<group>";
+		};
+		24B5A7651AA031D3004FBB8C /* MangaReadGridModalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24B5A7691AA040DE004FBB8C /* MangaReadGridModalViewController.h */,
+				24B5A76A1AA040DE004FBB8C /* MangaReadGridModalViewController.m */,
+				24B5A76F1AA0426B004FBB8C /* MangaReadGridModalCollectionViewCell */,
+			);
+			name = MangaReadGridModalViewController;
+			sourceTree = "<group>";
+		};
+		24B5A76F1AA0426B004FBB8C /* MangaReadGridModalCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				24B5A76C1AA04269004FBB8C /* MangaReadGridModalCollectionViewCell.h */,
+				24B5A76D1AA04269004FBB8C /* MangaReadGridModalCollectionViewCell.m */,
+			);
+			name = MangaReadGridModalCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		24C213AD1A9DB046005E6D1A /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				24C213AA1A9DB043005E6D1A /* NetworkHelper.h */,
+				24C213AB1A9DB043005E6D1A /* NetworkHelper.m */,
+			);
+			name = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		24C213B11A9DB7AC005E6D1A /* MangaDisplayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24C213AE1A9DB790005E6D1A /* MangaDisplayViewController.h */,
+				24C213AF1A9DB790005E6D1A /* MangaDisplayViewController.m */,
+			);
+			name = MangaDisplayViewController;
+			sourceTree = "<group>";
+		};
+		24C213B51A9E0BD5005E6D1A /* MangaDownloadsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24C213B21A9E0BD3005E6D1A /* MangaDownloadsTableViewController.h */,
+				24C213B31A9E0BD3005E6D1A /* MangaDownloadsTableViewController.m */,
+				2459C8E01AA0907500C587D6 /* MangaDownloadedTableViewCell */,
+			);
+			name = MangaDownloadsTableViewController;
+			sourceTree = "<group>";
+		};
+		24C213B91A9E0D0E005E6D1A /* MangaDownloadsQueueTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24C213B61A9E0CFA005E6D1A /* MangaDownloadsQueueTableViewController.h */,
+				24C213B71A9E0CFA005E6D1A /* MangaDownloadsQueueTableViewController.m */,
+				24C3C7221A9EF0B6006ECA44 /* MangaDownloadQueueTableViewCell */,
+			);
+			name = MangaDownloadsQueueTableViewController;
+			sourceTree = "<group>";
+		};
+		24C213BD1A9E1431005E6D1A /* DownloaderAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				24C213BA1A9E142C005E6D1A /* DownloaderAdapter.h */,
+				24C213BB1A9E142C005E6D1A /* DownloaderAdapter.m */,
+			);
+			name = DownloaderAdapter;
+			sourceTree = "<group>";
+		};
+		24C213C11A9E1477005E6D1A /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				24C213BE1A9E145C005E6D1A /* Downloader.h */,
+				24C213BF1A9E145C005E6D1A /* Downloader.m */,
+			);
+			name = Downloader;
+			sourceTree = "<group>";
+		};
+		24C213C51A9E159D005E6D1A /* DownloadMangaModel */ = {
+			isa = PBXGroup;
+			children = (
+				24C213C21A9E1599005E6D1A /* DownloadMangaModel.h */,
+				24C213C31A9E1599005E6D1A /* DownloadMangaModel.m */,
+			);
+			name = DownloadMangaModel;
+			sourceTree = "<group>";
+		};
+		24C213C91A9E17B7005E6D1A /* FakkuAPIMangaReadPage */ = {
+			isa = PBXGroup;
+			children = (
+				24C213C61A9E17B3005E6D1A /* FakkuAPIMangaReadPage.h */,
+				24C213C71A9E17B3005E6D1A /* FakkuAPIMangaReadPage.m */,
+			);
+			name = FakkuAPIMangaReadPage;
+			sourceTree = "<group>";
+		};
+		24C3C7221A9EF0B6006ECA44 /* MangaDownloadQueueTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				24C3C71F1A9EF0B2006ECA44 /* MangaDownloadQueueTableViewCell.h */,
+				24C3C7201A9EF0B2006ECA44 /* MangaDownloadQueueTableViewCell.m */,
+			);
+			name = MangaDownloadQueueTableViewCell;
+			sourceTree = "<group>";
+		};
+		24C3C7261A9F0907006ECA44 /* FileSystemHelper */ = {
+			isa = PBXGroup;
+			children = (
+				24C3C7231A9F0903006ECA44 /* FileSystemHelper.h */,
+				24C3C7241A9F0903006ECA44 /* FileSystemHelper.m */,
+			);
+			name = FileSystemHelper;
+			sourceTree = "<group>";
+		};
+		24F04CA61A9CD086006EAD9D /* LoadMoreFooterTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				24F04CA11A9CD083006EAD9D /* LoadMoreFooterTableViewCell.h */,
+				24F04CA21A9CD083006EAD9D /* LoadMoreFooterTableViewCell.m */,
+				24F04CA31A9CD083006EAD9D /* LoadMoreFooterTableViewCell.xib */,
+			);
+			name = LoadMoreFooterTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24B1FAC31A9B6F2A00DF4EB9 /* iFakku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24B1FAE71A9B6F2A00DF4EB9 /* Build configuration list for PBXNativeTarget "iFakku" */;
+			buildPhases = (
+				24B1FAC01A9B6F2A00DF4EB9 /* Sources */,
+				24B1FAC11A9B6F2A00DF4EB9 /* Frameworks */,
+				24B1FAC21A9B6F2A00DF4EB9 /* Resources */,
+				50524F424C454D533F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iFakku;
+			productName = iFakku;
+			productReference = 24B1FAC41A9B6F2A00DF4EB9 /* iFakku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24B1FADC1A9B6F2A00DF4EB9 /* iFakkuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24B1FAEA1A9B6F2A00DF4EB9 /* Build configuration list for PBXNativeTarget "iFakkuTests" */;
+			buildPhases = (
+				24B1FAD91A9B6F2A00DF4EB9 /* Sources */,
+				24B1FADA1A9B6F2A00DF4EB9 /* Frameworks */,
+				24B1FADB1A9B6F2A00DF4EB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24B1FADF1A9B6F2A00DF4EB9 /* PBXTargetDependency */,
+			);
+			name = iFakkuTests;
+			productName = iFakkuTests;
+			productReference = 24B1FADD1A9B6F2A00DF4EB9 /* iFakkuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24B1FABC1A9B6F2A00DF4EB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "SOS Brigade";
+				TargetAttributes = {
+					24B1FAC31A9B6F2A00DF4EB9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					24B1FADC1A9B6F2A00DF4EB9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 24B1FAC31A9B6F2A00DF4EB9;
+					};
+				};
+			};
+			buildConfigurationList = 24B1FABF1A9B6F2A00DF4EB9 /* Build configuration list for PBXProject "iFakku" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24B1FABB1A9B6F2A00DF4EB9;
+			productRefGroup = 24B1FAC51A9B6F2A00DF4EB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24B1FAC31A9B6F2A00DF4EB9 /* iFakku */,
+				24B1FADC1A9B6F2A00DF4EB9 /* iFakkuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24B1FAC21A9B6F2A00DF4EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B1FAD31A9B6F2A00DF4EB9 /* Main_iPad.storyboard in Resources */,
+				249460221AA2258400EE826B /* MangaListingTableViewController.xib in Resources */,
+				24B4DE981AA96C29002FCF58 /* iFakkuSpecialThanks.html in Resources */,
+				24B4DE971AA96C29002FCF58 /* iFakkuFAQ.html in Resources */,
+				24B37E9B1AA1995E00883515 /* MangaListingTableViewCell_iPhone.xib in Resources */,
+				244FA2A61A9C5A5B007952B2 /* MangaListingTableViewCell_iPad.xib in Resources */,
+				24B1FAD51A9B6F2A00DF4EB9 /* Images.xcassets in Resources */,
+				24FD47521AA9B5FF00105930 /* Main_iPhone.storyboard in Resources */,
+				24F04CA51A9CD083006EAD9D /* LoadMoreFooterTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24B1FADB1A9B6F2A00DF4EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50524F424C454D533F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Library/JailCoder/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/Entitlements/Entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24B1FAC01A9B6F2A00DF4EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2411D5851A9B7A940014F5A2 /* FakkuAPIAdapter.m in Sources */,
+				2459C8DF1AA0907200C587D6 /* MangaDownloadedTableViewCell.m in Sources */,
+				24F04CA41A9CD083006EAD9D /* LoadMoreFooterTableViewCell.m in Sources */,
+				24C3C7251A9F0903006ECA44 /* FileSystemHelper.m in Sources */,
+				24B5A76E1AA04269004FBB8C /* MangaReadGridModalCollectionViewCell.m in Sources */,
+				24C213B41A9E0BD3005E6D1A /* MangaDownloadsTableViewController.m in Sources */,
+				2411D5911A9B80FE0014F5A2 /* DataHelper.m in Sources */,
+				2486AB1C1AB8A8D20030C0BB /* MangaInfoDescriptionTableViewCell.m in Sources */,
+				2486AB181AB8A1700030C0BB /* MangaInfoTableViewController.m in Sources */,
+				2498EBF71AA8D0FE006EA41F /* MangaSettingsTableViewController.m in Sources */,
+				2411D57C1A9B794E0014F5A2 /* MangaListingViewController.m in Sources */,
+				244FA2841A9C50F0007952B2 /* MangaArtist.m in Sources */,
+				241474D91AA7632E00998A41 /* MangaBrowseTableViewController.m in Sources */,
+				244FA2A51A9C5A5B007952B2 /* MangaListingTableViewCell.m in Sources */,
+				2411D58C1A9B7C680014F5A2 /* FakkuAPIMangaListingPage.m in Sources */,
+				24C3C7211A9EF0B2006ECA44 /* MangaDownloadQueueTableViewCell.m in Sources */,
+				244FA29F1A9C5865007952B2 /* MangaListingTableViewController.m in Sources */,
+				24B5A7601AA0086C004FBB8C /* MangaReadViewController.m in Sources */,
+				244FA2801A9C50A1007952B2 /* MangaSeries.m in Sources */,
+				24C213C01A9E145C005E6D1A /* Downloader.m in Sources */,
+				24C213C81A9E17B3005E6D1A /* FakkuAPIMangaReadPage.m in Sources */,
+				24C213C41A9E1599005E6D1A /* DownloadMangaModel.m in Sources */,
+				2411D5A31A9B84DE0014F5A2 /* MangaLanguage.m in Sources */,
+				2411D59C1A9B848C0014F5A2 /* MangaModel.m in Sources */,
+				24C213BC1A9E142C005E6D1A /* DownloaderAdapter.m in Sources */,
+				2472A78C1AAB191C00EC0B60 /* MangaTagsTableViewController.m in Sources */,
+				24C213AC1A9DB043005E6D1A /* NetworkHelper.m in Sources */,
+				24B1FACD1A9B6F2A00DF4EB9 /* AppDelegate.m in Sources */,
+				248AFABA1AAB5B3B000DECD2 /* MangaSettingsPageTableViewController.m in Sources */,
+				244FA2901A9C51BB007952B2 /* MangaTag.m in Sources */,
+				248AFAB61AAB5973000DECD2 /* NSUserDefaultsHelper.m in Sources */,
+				244FA2931A9C51E0007952B2 /* MangaTranslator.m in Sources */,
+				2411D5811A9B7A030014F5A2 /* FakkuAPIPage.m in Sources */,
+				24B1FACA1A9B6F2A00DF4EB9 /* main.m in Sources */,
+				244FA28C1A9C5181007952B2 /* MangaPoster.m in Sources */,
+				244FA2881A9C5136007952B2 /* MangaPreviewThumbnails.m in Sources */,
+				244FA2971A9C520D007952B2 /* MangaPage.m in Sources */,
+				24C213B81A9E0CFA005E6D1A /* MangaDownloadsQueueTableViewController.m in Sources */,
+				24B5A76B1AA040DE004FBB8C /* MangaReadGridModalViewController.m in Sources */,
+				24C213B01A9DB790005E6D1A /* MangaDisplayViewController.m in Sources */,
+				2411D59F1A9B84B90014F5A2 /* MangaCategory.m in Sources */,
+				2447185F1AA8D7D800BD90BF /* MangaSettingsWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24B1FAD91A9B6F2A00DF4EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B1FAE41A9B6F2A00DF4EB9 /* iFakkuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24B1FADF1A9B6F2A00DF4EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24B1FAC31A9B6F2A00DF4EB9 /* iFakku */;
+			targetProxy = 24B1FADE1A9B6F2A00DF4EB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24B1FAD11A9B6F2A00DF4EB9 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24B1FAD21A9B6F2A00DF4EB9 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		24FD47541AA9B5FF00105930 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24FD47531AA9B5FF00105930 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24B1FAE51A9B6F2A00DF4EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24B1FAE61A9B6F2A00DF4EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24B1FAE81A9B6F2A00DF4EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = iFakku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24B1FAE91A9B6F2A00DF4EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = iFakku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		24B1FAEB1A9B6F2A00DF4EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iFakkuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFakku.app/iFakku";
+			};
+			name = Debug;
+		};
+		24B1FAEC1A9B6F2A00DF4EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iFakkuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFakku.app/iFakku";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24B1FABF1A9B6F2A00DF4EB9 /* Build configuration list for PBXProject "iFakku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B1FAE51A9B6F2A00DF4EB9 /* Debug */,
+				24B1FAE61A9B6F2A00DF4EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24B1FAE71A9B6F2A00DF4EB9 /* Build configuration list for PBXNativeTarget "iFakku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B1FAE81A9B6F2A00DF4EB9 /* Debug */,
+				24B1FAE91A9B6F2A00DF4EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24B1FAEA1A9B6F2A00DF4EB9 /* Build configuration list for PBXNativeTarget "iFakkuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B1FAEB1A9B6F2A00DF4EB9 /* Debug */,
+				24B1FAEC1A9B6F2A00DF4EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24B1FABC1A9B6F2A00DF4EB9 /* Project object */;
+}
